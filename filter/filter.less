@@ -1,0 +1,113 @@
+@import (reference) "../../styles/_mixins.less";
+@import (reference) "lesshat.less";
+
+.filter-vis {
+  padding: 1em;
+  width: 100%;
+}
+
+.vis-editor {
+
+  &.vis-type-filter {
+
+    .visualization-options {
+      .flex-parent();
+      .flex(1, 1, auto);
+    }
+
+    .filter-options {
+      .flex-parent();
+      .flex(1, 1, auto);
+
+      textarea {
+        .flex(1, 1, auto);
+        resize: none;
+      }
+
+    }
+
+  }
+
+}
+
+.filter-box {
+  border: 1px solid #ecf0f1;
+  background-color: #ecf0f1;
+  border-radius: 2px;
+  padding: 0;
+  display: inline-block;
+}
+
+#field-filter-box {
+  float: left;
+  display: inline-block;
+}
+
+.filter-button {
+  float: left;
+  height: 33px;
+}
+
+.filter-button:hover {
+  outline: none;
+  text-decoration: none;
+  color: #444444;
+}
+.filter-button:focus {
+  outline: none;
+  text-decoration: none;
+  color: #444444;
+}
+.filter-button:active {
+  outline: none;
+  text-decoration: none;
+  color: #444444;
+  background-color: #ECECEC;
+}
+.filter-form-control {
+  outline: none;
+  border-color: #ECECEC;
+  color: black;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #ffffff;
+  padding: 6px;
+  margin-bottom: 5px;
+  margin-bottom: 0px;
+}
+
+.angucomplete-holder {
+  position: relative;
+}
+.angucomplete-dropdown {
+  border-color: #ececec;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 2px;
+  padding: 6px;
+  cursor: pointer;
+  z-index: 9999;
+  position: absolute;
+  /*top: 32px;
+    left: 0px;
+    */
+  margin-top: -6px;
+  background-color: #ffffff;
+}
+.angucomplete-searching {
+  color: #acacac;
+  font-size: 14px;
+}
+.angucomplete-description {
+  font-size: 14px;
+}
+.angucomplete-row {
+  padding: 5px;
+  color: #000000;
+  margin-bottom: 4px;
+}
+.angucomplete-selected-row,
+.angucomplete-row:hover {
+  background-color: lightblue;
+  color: #ffffff;
+}
