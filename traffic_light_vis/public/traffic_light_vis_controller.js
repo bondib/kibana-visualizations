@@ -1,9 +1,9 @@
 define(function (require) {
 
-  var module = require('modules').get('kibana/traffic_light_vis', ['kibana']);
+  var module = require('ui/modules').get('kibana/traffic_light_vis', ['kibana']);
 
   module.controller('TrafficLightVisController', function ($scope, Private) {
-    var tabifyAggResponse = Private(require('components/agg_response/tabify/tabify'));
+    var tabifyAggResponse = Private(require('ui/agg_response/tabify/tabify'));
 
     var metrics = $scope.metrics = [];
 
