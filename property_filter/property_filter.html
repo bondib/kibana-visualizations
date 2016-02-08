@@ -1,0 +1,9 @@
+<div ng-controller="KbnFilterController" class="filter-vis">
+    <div>
+        <label>{{vis.params.filteredField}}</label>
+    </div>
+    <div class="filter-box clearfix">
+        <angucomplete id="field-filter-box" placeholder="Type value to filter.." pause="100" selectedobject="selectedValue" search-function="getAutoCompleteResults()" searchfields="key" titlefield="key" minlength="1" inputclass="filter-form-control form-control-small" class="field-filter-box" matchclass="highlight" />
+        <button id="filterButton" ng-click="executeFilter();" title="Filter" value="Add Filter" class="filter-button fa fa-search-plus"/>
+    </div>
+</div>

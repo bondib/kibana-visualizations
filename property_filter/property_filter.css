@@ -1,0 +1,131 @@
+.filter-vis {
+  padding: 1em;
+  width: 100%;
+}
+.vis-editor.vis-type-filter .visualization-options {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+.vis-editor.vis-type-filter .visualization-options > * {
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+}
+.vis-editor.vis-type-filter .filter-options {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+.vis-editor.vis-type-filter .filter-options > * {
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+}
+.vis-editor.vis-type-filter .filter-options textarea {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  resize: none;
+}
+.filter-box {
+  border: 1px solid #ecf0f1;
+  background-color: #ecf0f1;
+  border-radius: 2px;
+  padding: 0;
+  position: relative;
+}
+#field-filter-box {
+  width: 100%;
+}
+.filter-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 32px;
+}
+.filter-button:hover {
+  outline: none;
+  text-decoration: none;
+  color: #444444;
+}
+.filter-button:focus {
+  outline: none;
+  text-decoration: none;
+  color: #444444;
+}
+.filter-button:active {
+  outline: none;
+  text-decoration: none;
+  color: #444444;
+  background-color: #ECECEC;
+}
+.filter-form-control {
+  outline: none;
+  border: solid 1px #ececec;
+  color: black;
+  background-color: #ffffff;
+  padding: 6px;
+  margin-bottom: 0px;
+  width: 100%;
+}
+.angucomplete-holder {
+  position: relative;
+  display: block;
+  padding-right: 45px;
+}
+.angucomplete-dropdown {
+  border: solid 1px #ececec;
+  border-radius: 2px;
+  padding: 6px;
+  cursor: pointer;
+  z-index: 9999;
+  position: absolute;
+  margin-top: -6px;
+  background-color: #ffffff;
+}
+.angucomplete-searching {
+  color: #acacac;
+  font-size: 14px;
+}
+.angucomplete-description {
+  font-size: 14px;
+}
+.angucomplete-row {
+  padding: 5px;
+  color: #000000;
+  margin-bottom: 4px;
+}
+.angucomplete-selected-row,
+.angucomplete-row:hover {
+  background-color: lightblue;
+  color: #ffffff;
+}
