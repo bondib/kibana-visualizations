@@ -1,13 +1,13 @@
 define(function (require) {
   // we need to load the css ourselves
-  require('css!plugins/traffic_light_vis/traffic_light_vis.css');
+  require('plugins/traffic_light_vis/traffic_light_vis.css');
 
   // we also need to load the controller and used by the template
   require('plugins/traffic_light_vis/traffic_light_vis_controller');
 
-  return function (Private) {
-    var TemplateVisType = Private(require('plugins/vis_types/template/template_vis_type'));
-    var Schemas = Private(require('plugins/vis_types/_schemas'));
+  function TrafficLightVisProvider(Private) {
+    var TemplateVisType = Private(require('ui/template_vis_type/TemplateVisType'));
+    var Schemas = Private(require('ui/Vis/Schemas'));
 
     // return the visType object, which kibana will use to display and configure new
     // Vis object of this type.
@@ -16,7 +16,7 @@ define(function (require) {
       title: 'Traffic Light',
       description: 'Great for one-glance status readings, the traffic light visualization expresses in green / yellow / red the position of a single value in relation to low and high thresholds.',
       icon: 'fa-car',
-      template: require('text!plugins/traffic_light_vis/traffic_light_vis.html'),
+      template: require('plugins/traffic_light_vis/traffic_light_vis.html'),
       params: {
         defaults: {
           width: 50,
@@ -24,7 +24,7 @@ define(function (require) {
           greenThreshold: 80,
           invertScale: false
         },
-        editor: require('text!plugins/traffic_light_vis/traffic_light_vis_params.html')
+        editor: require('plugins/traffic_light_vis/traffic_light_vis_params.html')
       },
       schemas: new Schemas([
         {
@@ -38,5 +38,10 @@ define(function (require) {
         }
       ])
     });
-  };
+  }
+
+  require('ui/registry/vis_types').register(TrafficLightVisProvider);
+
+  // export the provider so that the visType can be required with Private()
+  return TrafficLightVisProvider;
 });
