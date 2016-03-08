@@ -20,9 +20,11 @@ define(function (require) {
       params: {
         defaults: {
           width: 50,
-          redThreshold: 20,
+          redThreshold: 20,          
           greenThreshold: 80,
-          invertScale: false
+          redAndGreenOnly: false,
+          invertScale: false,
+          rotateHorizontaly: false
         },
         editor: require('plugins/traffic_light_vis/traffic_light_vis_params.html')
       },

@@ -30,12 +30,26 @@
         width: 68%; height:25%;
         border-radius:50%;
         background-color:#000;
+        &.two-state {
+            margin-left:16%;
+            margin-right:16%;
+            margin-top:13%;
+            height:38.4%;            
+        }
         &.on {
           &.red { background-color:#d9534f; }
           &.yellow { background-color:#f0ad4e; }
           &.green { background-color:#5cb85c; }
-        }
+        }        
       }
     }
   }
+}
+
+.rotate-horizontal{                
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
 }

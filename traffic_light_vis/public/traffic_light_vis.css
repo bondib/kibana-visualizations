@@ -57,6 +57,12 @@
   border-radius: 50%;
   background-color: #000;
 }
+.traffic-light-vis .traffic-light-container .traffic-light .light.two-state {
+  margin-left:16%;
+  margin-right:16%;
+  margin-top:13%;
+  height:38.4%;     
+}
 .traffic-light-vis .traffic-light-container .traffic-light .light.on.red {
   background-color: #d9534f;
 }
@@ -65,4 +71,11 @@
 }
 .traffic-light-vis .traffic-light-container .traffic-light .light.on.green {
   background-color: #5cb85c;
+}
+.rotate-horizontal{                
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
 }
