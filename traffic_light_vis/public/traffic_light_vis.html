@@ -11,7 +11,7 @@
             <div class="traffic-light">
                 <div class="light red" ng-class="{'on': (!vis.params.invertScale && metric.value <= vis.params.redThreshold) || (vis.params.invertScale && metric.value >= vis.params.redThreshold),
                     'two-state': vis.params.redAndGreenOnly }"></div>
-                <div ng-show="!vis.params.redAndGreenOnly" class="light yellow" ng-class="{'on': (!vis.params.invertScale && metric.value > vis.params.redThreshold && metric.value < vis.params.greenThreshold) || (vis.params.invertScale && metric.value < vis.params.redThreshold && metric.value > vis.params.greenThreshold) }"></div>
+                <div ng-if="!vis.params.redAndGreenOnly" class="light yellow" ng-class="{'on': (!vis.params.invertScale && metric.value > vis.params.redThreshold && metric.value < vis.params.greenThreshold) || (vis.params.invertScale && metric.value < vis.params.redThreshold && metric.value > vis.params.greenThreshold) }"></div>
                 <div class="light green" ng-class="{'on': (vis.params.redAndGreenOnly && ((!vis.params.invertScale && metric.value > vis.params.redThreshold) || (vis.params.invertScale && metric.value < vis.params.redThreshold))) || 
                  (!vis.params.redAndGreenOnly && ((!vis.params.invertScale && metric.value >= vis.params.greenThreshold) || (vis.params.invertScale && metric.value <= vis.params.greenThreshold))) ,
                  'two-state': vis.params.redAndGreenOnly}"></div>
